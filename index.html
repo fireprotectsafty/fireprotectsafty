@@ -233,6 +233,66 @@
   .project-img-placeholder{position:relative; aspect-ratio:4/3; overflow:hidden; display:flex; align-items:center; justify-content:center;}
   .project-img-placeholder svg{width:56px; height:56px; color:rgba(255,255,255,0.9); position:relative; z-index:1;}
 
+  /* GUIDANCE */
+  .guidance-sec{padding:56px 0; background:color-mix(in oklab, var(--secondary) 45%, transparent); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
+  @media(min-width:768px){.guidance-sec{padding:96px 0;}}
+  .guidance-head{max-width:680px;}
+  .guidance-head p{margin-top:14px; color:var(--muted-foreground); font-size:14px; line-height:1.7;}
+  @media(min-width:640px){.guidance-head p{font-size:16px;}}
+  .guidance-grid{margin-top:32px; display:grid; grid-template-columns:1fr; gap:14px;}
+  @media(min-width:640px){.guidance-grid{grid-template-columns:1fr 1fr; gap:16px; margin-top:40px;}}
+  @media(min-width:1024px){.guidance-grid{grid-template-columns:1fr 1fr 1fr;}}
+  .guidance-card{background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; box-shadow:var(--shadow-card);}
+  .guidance-top{display:flex; align-items:center; gap:12px;}
+  .guidance-icon{display:grid; place-items:center; width:44px; height:44px; border-radius:12px; color:#fff; flex-shrink:0;}
+  .guidance-icon svg{width:22px; height:22px;}
+  .guidance-class{font-family:var(--font-display); font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted-foreground);}
+  .guidance-name{font-family:var(--font-display); font-size:17px; font-weight:700;}
+  .guidance-desc{margin-top:12px; font-size:13px; color:var(--muted-foreground); line-height:1.6;}
+  .guidance-use{margin-top:14px; display:flex; flex-wrap:wrap; gap:6px;}
+  .guidance-tag{background:var(--secondary); border-radius:999px; padding:4px 10px; font-size:11px; font-weight:600; color:var(--charcoal);}
+  .guidance-avoid{margin-top:12px; display:flex; align-items:flex-start; gap:6px; font-size:12px; color:var(--primary); font-weight:500;}
+  .guidance-avoid svg{width:14px; height:14px; flex-shrink:0; margin-top:1px;}
+
+  /* REFILLING */
+  .refill-sec{padding:56px 0;}
+  @media(min-width:768px){.refill-sec{padding:96px 0;}}
+  .refill-grid{display:grid; gap:32px; grid-template-columns:1fr;}
+  @media(min-width:1024px){.refill-grid{grid-template-columns:1fr 1fr; gap:56px; align-items:center;}}
+  .refill-copy p{margin-top:14px; color:var(--muted-foreground); font-size:14px; line-height:1.7;}
+  @media(min-width:640px){.refill-copy p{font-size:16px;}}
+  .refill-points{margin-top:24px; display:flex; flex-direction:column; gap:12px;}
+  .refill-points .f{display:flex; align-items:flex-start; gap:10px; font-size:14px; color:var(--charcoal);}
+  .refill-points .check{display:grid; place-items:center; width:22px; height:22px; border-radius:999px; background:var(--gradient-crimson); flex-shrink:0; margin-top:1px;}
+  .refill-points .check svg{width:12px; height:12px; color:#fff;}
+  .refill-ctas{margin-top:24px; display:flex; flex-wrap:wrap; gap:12px;}
+  .refill-steps{display:flex; flex-direction:column; gap:0;}
+  .refill-step{display:flex; gap:16px; position:relative; padding-bottom:28px;}
+  .refill-step:last-child{padding-bottom:0;}
+  .refill-step-line{position:absolute; left:19px; top:40px; bottom:0; width:2px; background:var(--border);}
+  .refill-step:last-child .refill-step-line{display:none;}
+  .refill-step-num{display:grid; place-items:center; width:40px; height:40px; border-radius:999px; background:var(--card); border:2px solid var(--primary); color:var(--primary); font-family:var(--font-display); font-weight:700; font-size:15px; flex-shrink:0; z-index:1;}
+  .refill-step-body{padding-top:6px;}
+  .refill-step-title{font-family:var(--font-display); font-size:16px; font-weight:700;}
+  .refill-step-desc{margin-top:4px; font-size:13px; color:var(--muted-foreground); line-height:1.6;}
+
+  /* MATERIALS LIST */
+  .materials-sec{padding:56px 0; background:color-mix(in oklab, var(--secondary) 45%, transparent); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
+  @media(min-width:768px){.materials-sec{padding:96px 0;}}
+  .materials-grid{margin-top:32px; display:grid; grid-template-columns:1fr 1fr; gap:12px;}
+  @media(min-width:640px){.materials-grid{grid-template-columns:1fr 1fr 1fr; gap:16px; margin-top:40px;}}
+  @media(min-width:1024px){.materials-grid{grid-template-columns:repeat(4,1fr);}}
+  .material-card{background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px; text-align:center; box-shadow:var(--shadow-card); transition:all .2s; display:flex; flex-direction:column;}
+  .material-note{margin-top:4px; font-size:11px; color:var(--muted-foreground); flex:1;}
+  .material-buy{margin-top:12px; display:inline-flex; align-items:center; justify-content:center; gap:6px; border:1px solid var(--border); border-radius:8px; padding:7px 10px; font-size:12px; font-weight:600; color:var(--primary); background:var(--secondary); transition:all .2s;}
+  .material-buy:hover{background:var(--primary); color:#fff; border-color:transparent;}
+  .material-buy svg{width:13px; height:13px; flex-shrink:0;}
+  .material-card:hover{transform:translateY(-4px); box-shadow:var(--shadow-lift); border-color:color-mix(in oklab, var(--primary) 30%, var(--border));}
+  .material-icon{display:grid; place-items:center; width:44px; height:44px; border-radius:12px; background:var(--secondary); color:var(--primary); margin:0 auto 12px;}
+  .material-icon svg{width:22px; height:22px;}
+  .material-name{font-size:13px; font-weight:600;}
+  @media(min-width:640px){.material-name{font-size:14px;}}
+
   /* QUOTE FORM */
   .quote-sec{padding:56px 0; background:var(--gradient-dark); color:#fff;}
   @media(min-width:768px){.quote-sec{padding:96px 0;}}
@@ -337,9 +397,10 @@
       SafetyPro <span class="accent">&nbsp;Fire Systems</span>
     </a>
     <nav class="nav-links">
+      <a href="#guidance">Guidance</a>
       <a href="#catalogue">Catalogue</a>
+      <a href="#refilling">Refilling</a>
       <a href="#projects">Projects</a>
-      <a href="#compliance">Compliance</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-right">
@@ -350,9 +411,11 @@
     </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
+    <a href="#guidance">Guidance</a>
     <a href="#catalogue">Catalogue</a>
+    <a href="#refilling">Refilling</a>
+    <a href="#materials">Materials</a>
     <a href="#projects">Projects</a>
-    <a href="#compliance">Compliance</a>
     <a href="#contact">Contact</a>
     <a href="#quote" class="btn btn-primary btn-lg">Request a Quote</a>
   </div>
@@ -401,6 +464,127 @@
           <div class="industry-icon"><svg viewBox="0 0 24 24"><path d="M22 8.35V20a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8.35a1 1 0 0 1 .53-.88l8-4.44a1 1 0 0 1 .94 0l8 4.44a1 1 0 0 1 .53.88Z"/><path d="M6 18h12M9 12h6"/></svg></div>
           <div class="title">Warehouses</div>
           <div class="note">Hydrant + sprinklers</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="guidance-sec" id="guidance">
+  <div class="wrap">
+    <div class="guidance-head">
+      <div class="eyebrow">Guidance</div>
+      <h2 class="section-title">Which Extinguisher for Which Fire?</h2>
+      <p>Fires are classified by what's burning. Using the wrong extinguisher can make things worse — here's a quick reference to help you choose correctly, or ask our team for a free on-site assessment.</p>
+    </div>
+    <div class="guidance-grid">
+      <div class="guidance-card">
+        <div class="guidance-top">
+          <div class="guidance-icon" style="background:#2563eb">
+            <svg viewBox="0 0 24 24"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-6-4-6 4-6-4z"/></svg>
+          </div>
+          <div>
+            <div class="guidance-class">Class A</div>
+            <div class="guidance-name">Ordinary Combustibles</div>
+          </div>
+        </div>
+        <p class="guidance-desc">Wood, paper, cloth, cardboard and general household/office materials.</p>
+        <div class="guidance-use">
+          <span class="guidance-tag">Water</span>
+          <span class="guidance-tag">DCP (ABC)</span>
+          <span class="guidance-tag">AFFF Foam</span>
+        </div>
+      </div>
+      <div class="guidance-card">
+        <div class="guidance-top">
+          <div class="guidance-icon" style="background:#d97706">
+            <svg viewBox="0 0 24 24"><path d="M12 2c-1.5 4-6 6-6 12a6 6 0 0 0 12 0c0-2-1-3-1-3s-1 2-2 2c1-3-1-5-1-7 0 2-2 3-2 5-1-2 0-6 0-9z"/></svg>
+          </div>
+          <div>
+            <div class="guidance-class">Class B</div>
+            <div class="guidance-name">Flammable Liquids</div>
+          </div>
+        </div>
+        <p class="guidance-desc">Petrol, diesel, paints, solvents and oils — common in workshops and fuel stations.</p>
+        <div class="guidance-use">
+          <span class="guidance-tag">AFFF Foam</span>
+          <span class="guidance-tag">DCP</span>
+          <span class="guidance-tag">CO₂</span>
+        </div>
+        <div class="guidance-avoid">
+          <svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>
+          Never use water — it spreads the fire.
+        </div>
+      </div>
+      <div class="guidance-card">
+        <div class="guidance-top">
+          <div class="guidance-icon" style="background:#1e293b">
+            <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          </div>
+          <div>
+            <div class="guidance-class">Class C / E</div>
+            <div class="guidance-name">Electrical Fires</div>
+          </div>
+        </div>
+        <p class="guidance-desc">Live panels, server racks, wiring and electrical equipment under load.</p>
+        <div class="guidance-use">
+          <span class="guidance-tag">CO₂</span>
+          <span class="guidance-tag">DCP</span>
+        </div>
+        <div class="guidance-avoid">
+          <svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>
+          Never use water or foam — risk of electric shock.
+        </div>
+      </div>
+      <div class="guidance-card">
+        <div class="guidance-top">
+          <div class="guidance-icon" style="background:#059669">
+            <svg viewBox="0 0 24 24"><path d="M3 3v18h18M7 15l4-4 4 4 4-8"/></svg>
+          </div>
+          <div>
+            <div class="guidance-class">Class F</div>
+            <div class="guidance-name">Cooking Oils & Fats</div>
+          </div>
+        </div>
+        <p class="guidance-desc">Deep fryers, commercial kitchen hobs and grease fires in restaurants.</p>
+        <div class="guidance-use">
+          <span class="guidance-tag">Wet Chemical</span>
+        </div>
+        <div class="guidance-avoid">
+          <svg viewBox="0 0 24 24"><path d="M12 9v4M12 17h.01M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z"/></svg>
+          Never use water — hot oil will explode violently.
+        </div>
+      </div>
+      <div class="guidance-card">
+        <div class="guidance-top">
+          <div class="guidance-icon" style="background:#ea580c">
+            <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4"/></svg>
+          </div>
+          <div>
+            <div class="guidance-class">General Office / Home</div>
+            <div class="guidance-name">Mixed Everyday Risk</div>
+          </div>
+        </div>
+        <p class="guidance-desc">A mix of paper, electronics and small kitchenettes — most offices and homes.</p>
+        <div class="guidance-use">
+          <span class="guidance-tag">DCP (ABC) 2–4kg</span>
+        </div>
+      </div>
+      <div class="guidance-card">
+        <div class="guidance-top">
+          <div class="guidance-icon" style="background:#dc2626">
+            <svg viewBox="0 0 24 24"><path d="M22 8.35V20a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8.35a1 1 0 0 1 .53-.88l8-4.44a1 1 0 0 1 .94 0l8 4.44a1 1 0 0 1 .53.88Z"/></svg>
+          </div>
+          <div>
+            <div class="guidance-class">Industrial / Large-Scale</div>
+            <div class="guidance-name">Factories & Warehouses</div>
+          </div>
+        </div>
+        <p class="guidance-desc">Mixed hazard sites with machinery, fuel storage and high fire-load materials.</p>
+        <div class="guidance-use">
+          <span class="guidance-tag">DCP 6–9kg</span>
+          <span class="guidance-tag">Hydrant System</span>
+          <span class="guidance-tag">Suppression System</span>
         </div>
       </div>
     </div>
@@ -563,6 +747,62 @@
   </div>
 </section>
 
+<section class="refill-sec" id="refilling">
+  <div class="wrap refill-grid">
+    <div class="refill-copy">
+      <div class="eyebrow">Refilling & Maintenance</div>
+      <h2 class="section-title">Keep Every Extinguisher Ready to Fire.</h2>
+      <p>An extinguisher is only useful if it actually works when needed. We refill, pressure-test and re-certify extinguishers of any brand — whether it was used once, has expired, or is due for its annual PSQCA-compliance check.</p>
+      <div class="refill-points">
+        <div class="f"><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>Refill after every use, even a partial discharge</div>
+        <div class="f"><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>Annual inspection & refill recommended for compliance</div>
+        <div class="f"><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>All brands and types — Water, DCP, CO₂, AFFF, Wet Chemical</div>
+        <div class="f"><span class="check"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>Pickup & drop-off available across Karachi</div>
+      </div>
+      <div class="refill-ctas">
+        <a href="https://wa.me/923121046529?text=Hi%2C%20I%20need%20my%20fire%20extinguisher(s)%20refilled%2Fserviced.%20Please%20share%20details." target="_blank" class="btn btn-primary btn-lg">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 3.4z"/></svg>
+          Book a Refill on WhatsApp
+        </a>
+        <a href="#quote" class="btn btn-outline btn-lg">Ask a Question</a>
+      </div>
+    </div>
+    <div class="refill-steps">
+      <div class="refill-step">
+        <div class="refill-step-line"></div>
+        <div class="refill-step-num">1</div>
+        <div class="refill-step-body">
+          <div class="refill-step-title">Inspection</div>
+          <div class="refill-step-desc">We check the cylinder, hose, pressure gauge and safety pin for wear, damage or corrosion.</div>
+        </div>
+      </div>
+      <div class="refill-step">
+        <div class="refill-step-line"></div>
+        <div class="refill-step-num">2</div>
+        <div class="refill-step-body">
+          <div class="refill-step-title">Discharge & Refill</div>
+          <div class="refill-step-desc">Old agent is fully discharged and the correct fresh agent (DCP / CO₂ / AFFF / Wet Chemical) is refilled to spec.</div>
+        </div>
+      </div>
+      <div class="refill-step">
+        <div class="refill-step-line"></div>
+        <div class="refill-step-num">3</div>
+        <div class="refill-step-body">
+          <div class="refill-step-title">Pressure Testing</div>
+          <div class="refill-step-desc">The cylinder is pressure-tested to confirm it holds correctly and discharges as expected.</div>
+        </div>
+      </div>
+      <div class="refill-step">
+        <div class="refill-step-num">4</div>
+        <div class="refill-step-body">
+          <div class="refill-step-title">Certification Tag</div>
+          <div class="refill-step-desc">A dated service tag is attached, so your compliance records stay audit-ready.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="quote-sec" id="quote">
   <div class="wrap quote-grid">
     <div>
@@ -598,17 +838,17 @@
     <div>
       <div class="foot-h">Quick Links</div>
       <ul class="foot-links">
+        <li><a href="#guidance">Guidance</a></li>
         <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#refilling">Refilling</a></li>
+        <li><a href="#materials">Materials</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#compliance">Compliance</a></li>
-        <li><a href="#">Maintenance</a></li>
-        <li><a href="#">About</a></li>
       </ul>
     </div>
     <div>
       <div class="foot-h">Contact</div>
       <ul class="foot-contact">
-        <li><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+92 21 3456 7890</li>
+        <li><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+92 312 1046529</li>
         <li><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>hello@safetypro.pk</li>
         <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>24/7 Emergency</li>
       </ul>
@@ -645,19 +885,7 @@ window.addEventListener("resize", () => { if(window.innerWidth > 900 && menuOpen
 
 /* ===== Catalogue ===== */
 const productData = {
-  Water: { label:"Water", tag:"Class A", color:"#2563eb", title:"Water Extinguisher", desc:"Ideal for wood, paper, textiles and general combustibles.",
-    specs:[["Fire Rating","13A"],["Operating Temp","+5°C to +60°C"],["Discharge Time","55s"]],
-    variants:[
-      {size:"9L", img:"images/water-9l.jpg", title:"Heavy-Duty Water Extinguisher (9L)", desc:"Higher-capacity unit for warehouses, workshops and large open-plan areas where a bigger reserve is needed."},
-    ], variantLabel:"Capacity" },
-  CO2: { label:"CO₂", tag:"Class B / E", color:"#1e293b", title:"CO₂ Extinguisher", desc:"Clean, non-conductive — perfect for electrical panels and servers.",
-    specs:[["Fire Rating","34B"],["Operating Temp","-20°C to +60°C"],["Discharge Time","18s"]],
-    variants:[
-      {size:"5 kg", img:"images/co2-5kg.jpg", title:"Heavy-Duty CO₂ Extinguisher (5 kg)", desc:"Weighs roughly 12 kg to 17 kg total. Heavier-duty option for larger data centres, control rooms and industrial electrical installations."},
-      {size:"25 kg", img:"images/co2-25kg.jpg", title:"Large and Wheeled CO₂ Extinguisher (25 kg)", desc:"Heavy steel cylinder built for industrial plants or high-risk chemical areas. Requires two people to carry and operate safely."},
-      {size:"50 kg", img:"images/co2-50kg.jpg", title:"Large and Wheeled CO₂ Extinguisher (50 kg)", desc:"Large wheeled units designed for heavy industrial sites, fuel stations, or warehouses where high-volume discharge is required."},
-    ], variantLabel:"Capacity" },
-  DCP: { label:"Dry Chemical (DCP)", tag:"Class A B C", color:"#d97706", title:"Dry Chemical Powder Extinguisher", desc:"Universal Dry Chemical Powder — the workhorse of every facility.",
+   DCP: { label:"Dry Chemical (DCP)", tag:"Class A B C", color:"#d97706", title:"Dry Chemical Powder Extinguisher", desc:"Universal Dry Chemical Powder — the workhorse of every facility.",
     specs:[["Fire Rating","21A 144B"],["Operating Temp","-30°C to +60°C"],["Discharge Time","22s"]],
     variants:[
       {size:"1kg", img:"images/dcp-1kg.jpg", title:"Compact DCP Extinguisher (1kg)", desc:"Entry-level unit for cars, small shops and homes — light enough for anyone to use."},
@@ -665,11 +893,30 @@ const productData = {
       {size:"4kg", img:"images/dcp-4kg.jpg", title:"Small DCP Extinguisher (4kg)", desc:"A solid all-rounder for offices, retail counters and small workshops."},
       {size:"6kg", img:"images/dcp-6kg.jpg", title:"Standard DCP Extinguisher (6kg)", desc:"Our most-installed size — the standard choice for corridors, factory floors and staircases in compliance audits."},
       ], variantLabel:"Capacity" },
+  CO2: { label:"CO₂", tag:"Class B / E", color:"#1e293b", title:"CO₂ Extinguisher", desc:"Clean, non-conductive — perfect for electrical panels and servers.",
+    specs:[["Fire Rating","34B"],["Operating Temp","-20°C to +60°C"],["Discharge Time","18s"]],
+    variants:[
+      {size:"5 kg", img:"images/co2-5kg.jpg", title:"Heavy-Duty CO₂ Extinguisher (5 kg)", desc:"Weighs roughly 12 kg to 17 kg total. Heavier-duty option for larger data centres, control rooms and industrial electrical installations."},
+      {size:"25 kg", img:"images/co2-25kg.jpg", title:"Large and Wheeled CO₂ Extinguisher (25 kg)", desc:"Heavy steel cylinder built for industrial plants or high-risk chemical areas. Requires two people to carry and operate safely."},
+      {size:"50 kg", img:"images/co2-50kg.jpg", title:"Large and Wheeled CO₂ Extinguisher (50 kg)", desc:"Large wheeled units designed for heavy industrial sites, fuel stations, or warehouses where high-volume discharge is required."},
+    ], variantLabel:"Capacity" },
+  AFFF: { label:"AFFF", tag:"Class A & B ", color:"#2563eb", title:"AFFF Foam Extinguisher", desc:" highly effective safety device that sprays a specialized, water-based foam blanket over a fire to quickly suffocate and cool it",
+    specs:[["Fire Rating","21A 233B"],["Operating Temp","+5°C to +60°C"],["Discharge Time","20s - 38s"]],
+    variants:[
+      {size:"6L", img:"images/afff-6l.jpg", title:"Standard AFFF Extinguisher (6L)", desc:"It offers a strong balance between a high fire fighting capacity and a weight that is easy for most people to lift and carry, Best for Standard offices, Small workshops, School corridors, Shops and retail spaces."},
+      {
+      size:"9L", img:"images/afff-9l.jpg", title:"Heavy-Duty AFFF  Extinguisher (9L)", desc:"is a heavy-duty option. It contains more liquid to tackle larger, higher-risk fires, but it requires more physical strength to operate properly, Best for Petrol station forecourts, Large industrial warehouses, Commercial paint shops, Fuel and oil storage areas"}
+    ], variantLabel:"Capacity" },
   Wet: { label:"Wet Chemical", tag:"Class F", color:"#059669", title:"Wet Chemical Extinguisher", desc:"Cooking oils and commercial kitchen fires — restaurant grade.",
     specs:[["Fire Rating","25F"],["Operating Temp","+5°C to +60°C"],["Discharge Time","50s"]],
     variants:[
       {size:"6L", img:"images/wet-6l.jpg", title:"Standard Wet Chemical Extinguisher (6L)", desc:"Standard size for restaurant and cafeteria kitchens with multiple cooking stations."},
       {size:"9L", img:"images/wet-9l.jpg", title:"Heavy-Duty Wet Chemical Extinguisher (9L)", desc:"Higher-capacity unit for large commercial kitchens, catering units and hotel kitchens."},
+    ], variantLabel:"Capacity" },
+  Water: { label:"Water", tag:"Class A", color:"#2563eb", title:"Water Extinguisher", desc:"Ideal for wood, paper, textiles and general combustibles.",
+    specs:[["Fire Rating","13A"],["Operating Temp","+5°C to +60°C"],["Discharge Time","55s"]],
+    variants:[
+      {size:"9L", img:"images/water-9l.jpg", title:"Heavy-Duty Water Extinguisher (9L)", desc:"Higher-capacity unit for warehouses, workshops and large open-plan areas where a bigger reserve is needed."},
     ], variantLabel:"Capacity" },
   Alarm: { label:"Fire Alarm System", tag:"Detection", color:"#7c3aed", title:"Fire Alarm System", desc:"Conventional and addressable fire alarm systems with smoke, heat and manual call points for early detection.",
     specs:[["Coverage","Zone-based"],["Response","Real-time"],["Standard","NFPA 72"]],
@@ -691,9 +938,19 @@ const productData = {
       {size:"Hose Reel", img:"images/Hose-Reel.jpg", title:"Fire Hose Reel", desc:"Fixed reel with hose ready for immediate first-response use by on-site staff."},
       {size:"Fire Pump Set", img:"images/Fire-Pump-Set.jpg", title:"Fire Pump Set", desc:"Dedicated pump set that maintains water pressure across the entire hydrant network."},
     ], variantLabel:"System Type" },
+  Materials: { label:"Fire Safety Materials", tag:"Accessories", color:"#ea580c", title:"Fire Safety Materials", desc:"Essential fire safety equipment and materials for maintenance, inspection and compliance.",
+    specs:[["Coverage","All Systems"],["Application","Support"],["Standard","NFPA 101"]],
+    variants:[
+      {size:"Fire Blanket", img:"images/Fire-Blanket.jpg", title:"Fire Blanket", desc:"Fire-retardant fabric sheet for smothering small pan and kitchen fires, or wrapping around a person."},
+      {size:"Fire Hose", img:"images/Fire-Hose.jpg", title:"Fire Hose", desc:"Flexible tube for delivering water or foam from hydrants and hose reels to the fire source."},
+      {size:"Brackets", img:"images/Brackets.jpg", title:"Extinguisher Brackets", desc:"Wall-mount brackets for correct extinguisher placement and access."},
+      {size:"Stands", img:"images/Stands.jpg", title:"Extinguisher Stands", desc:"Free-standing floor stands for correct extinguisher placement and access."},
+      {size:"Extinguisher Cabinets", img:"images/Extinguisher-Cabinets.jpg", title:"Extinguisher Cabinets", desc:"Indoor and weatherproof outdoor cabinets that protect extinguishers while keeping them accessible."},
+      {size:"Seals & Safety Pins", img:"images/Seals-Pins.jpg", title:"Seals & Safety Pins", desc:"Tamper-evident seals and safety pins replaced after every inspection, refill or use."},
+    ], variantLabel:"Material Type" },
 };
-const tabOrder = ["Water","CO2","DCP","Wet","Alarm","Suppression","Hydrant"];
-let activeTab = "Water";
+const tabOrder = ["DCP","CO2","AFFF","Wet","Water","Alarm","Suppression","Hydrant","Materials"];
+let activeTab = "DCP";
 let activeVariant = productData[activeTab].variants[0].size;
 
 function renderTabs(){
@@ -733,7 +990,7 @@ function renderPanel(){
         Pricing depends on site survey &amp; quantity — contact us for a custom quote.
       </div>
       <div class="cat-ctas">
-        <a href="https://wa.me/923452182099?text=${encodeURIComponent('Hi, I am interested in: ' + (currentVariant.title || p.title) + '. Please share details and pricing.')}" target="_blank" class="btn btn-primary btn-lg">
+        <a href="https://wa.me/923121046529?text=${encodeURIComponent('Hi, I am interested in: ' + (currentVariant.title || p.title) + '. Please share details and pricing.')}" target="_blank" class="btn btn-primary btn-lg">
           <svg viewBox="0 0 24 24" width="16" height="16"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 3.4z"/></svg>
           WhatsApp for Details
         </a>
@@ -752,7 +1009,7 @@ function renderPanel(){
       if(descEl && newVariant){ descEl.textContent = newVariant.desc || p.desc; }
       const titleEl = document.getElementById("catTitle");
       if(titleEl && newVariant){ titleEl.textContent = newVariant.title || p.title; }
-      panel.querySelector(".btn-primary").href = `https://wa.me/923452182099?text=${encodeURIComponent('Hi, I am interested in: ' + (newVariant?.title || p.title) + '. Please share details and pricing.')}`;
+      panel.querySelector(".btn-primary").href = `https://wa.me/923121046529?text=${encodeURIComponent('Hi, I am interested in: ' + (newVariant?.title || p.title) + '. Please share details and pricing.')}`;
     });
   });
 }
@@ -926,7 +1183,7 @@ if(projectsGrid && scrollPrevBtn && scrollNextBtn){
 
    >>> EDIT THESE TWO LINES BEFORE GOING LIVE <<<
    ======================================================================== */
-const WHATSAPP_NUMBER = "923452182099";
+const WHATSAPP_NUMBER = "923121046529";
 const WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE"; // <-- get free at https://web3forms.com (sign up, verify email, copy key)
 
 function buildMessage(){
