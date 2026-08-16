@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SafetyPro Fire Systems | Certified Fire Safety & Fire Suppression Systems</title>
-<link rel="icon" type="image/jpeg" href="images/Logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -294,6 +293,42 @@
   .material-name{font-size:13px; font-weight:600;}
   @media(min-width:640px){.material-name{font-size:14px;}}
 
+  /* REVIEWS */
+  .reviews-sec{padding:56px 0;}
+  @media(min-width:768px){.reviews-sec{padding:96px 0;}}
+  .reviews-head{display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:space-between; gap:20px;}
+  .reviews-head p{margin-top:14px; max-width:520px; color:var(--muted-foreground); font-size:14px; line-height:1.7;}
+  @media(min-width:640px){.reviews-head p{font-size:16px;}}
+  .reviews-summary{display:flex; align-items:center; gap:14px; border:1px solid var(--border); background:var(--card); border-radius:16px; padding:14px 20px; box-shadow:var(--shadow-card);}
+  .reviews-summary .score{font-family:var(--font-display); font-size:32px; font-weight:700; color:var(--primary); line-height:1;}
+  .reviews-summary .stars{display:flex; gap:2px; color:#f59e0b;}
+  .reviews-summary .stars svg{width:16px; height:16px; fill:#f59e0b;}
+  .reviews-summary .meta{font-size:12px; color:var(--muted-foreground); margin-top:4px;}
+  .reviews-scroll-wrap{position:relative; margin-top:32px;}
+  @media(min-width:768px){.reviews-scroll-wrap{margin-top:40px;}}
+  .reviews-grid{display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; padding:4px 4px 16px; -webkit-overflow-scrolling:touch; scrollbar-width:thin; scrollbar-color:var(--border) transparent;}
+  .reviews-grid::-webkit-scrollbar{height:8px;}
+  .reviews-grid::-webkit-scrollbar-track{background:transparent;}
+  .reviews-grid::-webkit-scrollbar-thumb{background:var(--border); border-radius:99px;}
+  .review-card{flex:0 0 260px; scroll-snap-align:start; background:var(--card); border:1px solid var(--border); border-radius:16px; padding:20px; box-shadow:var(--shadow-card); display:flex; flex-direction:column;}
+  @media(min-width:480px){.review-card{flex:0 0 300px;}}
+  @media(min-width:640px){.review-card{flex:0 0 320px;}}
+  .reviews-scroll-hint{display:flex; align-items:center; justify-content:center; gap:8px; margin-top:4px; font-size:12px; color:var(--muted-foreground);}
+  .reviews-scroll-hint svg{width:14px; height:14px; color:var(--primary);}
+  .review-top{display:flex; align-items:center; gap:12px;}
+  .review-avatar{display:grid; place-items:center; width:44px; height:44px; border-radius:999px; background:var(--gradient-crimson); color:#fff; font-family:var(--font-display); font-weight:700; font-size:16px; flex-shrink:0;}
+  .review-name{font-weight:700; font-size:14px;}
+  .review-role{font-size:12px; color:var(--muted-foreground);}
+  .review-stars{display:flex; gap:2px; margin-top:12px; color:#f59e0b;}
+  .review-stars svg{width:14px; height:14px; fill:#f59e0b;}
+  .review-text{margin-top:10px; font-size:13px; line-height:1.6; color:var(--charcoal); flex:1;}
+  @media(min-width:640px){.review-text{font-size:14px;}}
+  .review-date{margin-top:14px; font-size:11px; color:var(--muted-foreground); text-transform:uppercase; letter-spacing:0.05em;}
+  .add-review-box{margin-top:32px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; border:1px dashed color-mix(in oklab, var(--primary) 40%, var(--border)); background:color-mix(in oklab, var(--secondary) 40%, transparent); border-radius:16px; padding:20px 24px;}
+  @media(min-width:640px){.add-review-box{margin-top:40px;}}
+  .add-review-box .txt{font-size:14px; font-weight:600;}
+  .add-review-box .sub{margin-top:2px; font-size:12px; font-weight:400; color:var(--muted-foreground);}
+
   /* QUOTE FORM */
   .quote-sec{padding:56px 0; background:var(--gradient-dark); color:#fff;}
   @media(min-width:768px){.quote-sec{padding:96px 0;}}
@@ -392,7 +427,9 @@
 <header class="nav">
   <div class="wrap nav-inner">
     <a href="#" class="brand">
-      <img src="images/Logo.png" style="height:40px;width:40px;border-radius:8px;object-fit:cover;">
+      <span class="brand-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 17a2.5 2.5 0 0 0 2.5-2.5c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7.5 7.5 0 1 1-15 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+      </span>
       SafetyPro <span class="accent">&nbsp;Fire Systems</span>
     </a>
     <nav class="nav-links">
@@ -400,6 +437,7 @@
       <a href="#catalogue">Catalogue</a>
       <a href="#refilling">Refilling</a>
       <a href="#projects">Projects</a>
+      <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-right">
@@ -415,6 +453,7 @@
     <a href="#refilling">Refilling</a>
     <a href="#materials">Materials</a>
     <a href="#projects">Projects</a>
+    <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
     <a href="#quote" class="btn btn-primary btn-lg">Request a Quote</a>
   </div>
@@ -802,6 +841,113 @@
   </div>
 </section>
 
+<section class="reviews-sec" id="reviews">
+  <div class="wrap">
+    <div class="reviews-head">
+      <div>
+        <div class="eyebrow">Testimonials</div>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p>Real feedback from facilities we've protected across Karachi. Had work done with us? We'd love to hear from you too.</p>
+      </div>
+      <div class="reviews-summary">
+        <div>
+          <div class="score">4.9</div>
+        </div>
+        <div>
+          <div class="stars">
+            <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <div class="meta">Based on 120+ client reviews</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-scroll-wrap">
+    <button class="scroll-nav-btn prev" id="reviewsScrollPrev" aria-label="Scroll left">
+      <span class="circle"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></span>
+    </button>
+    <button class="scroll-nav-btn next" id="reviewsScrollNext" aria-label="Scroll right">
+      <span class="circle"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></span>
+    </button>
+    <div class="reviews-grid" id="reviewsGrid">
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">AK</div>
+          <div>
+            <div class="review-name">Ahmed Khan</div>
+            <div class="review-role">Al-Karam Textile Mills</div>
+          </div>
+        </div>
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p class="review-text">Professional team from start to finish. They handled our entire factory's fire suppression setup and passed compliance on the first audit.</p>
+        <div class="review-date">March 2026</div>
+      </div>
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">SF</div>
+          <div>
+            <div class="review-name">Sana Farooq</div>
+            <div class="review-role">Meezan Corporate HQ</div>
+          </div>
+        </div>
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p class="review-text">Quick response, tidy installation across all 14 floors, and the annual maintenance contract gives us real peace of mind.</p>
+        <div class="review-date">January 2026</div>
+      </div>
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">BC</div>
+          <div>
+            <div class="review-name">Beaconhouse Campus</div>
+            <div class="review-role">Facility Management</div>
+          </div>
+        </div>
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </div>
+        <p class="review-text">Helped us get fully PSQCA-compliant before our safety inspection, including signage and staff drills. Highly recommended.</p>
+        <div class="review-date">November 2025</div>
+      </div>
+    </div>
+    <div class="reviews-scroll-hint">
+      <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+      Scroll to see more reviews
+    </div>
+    </div>
+
+    <div class="add-review-box">
+      <div>
+        <div class="txt">Worked with SafetyPro?</div>
+        <div class="sub">Share your experience — it takes less than a minute on WhatsApp.</div>
+      </div>
+      <a href="https://wa.me/923121046529?text=Hi%2C%20I%27d%20like%20to%20share%20a%20review%20of%20my%20experience%20with%20SafetyPro%20Fire%20Systems%3A%0A%0ARating%20(1-5%20stars)%3A%20%0AMy%20review%3A%20" target="_blank" class="btn btn-primary btn-lg">
+        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 3.4z"/></svg>
+        Add a Review on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="quote-sec" id="quote">
   <div class="wrap quote-grid">
     <div>
@@ -842,6 +988,7 @@
         <li><a href="#refilling">Refilling</a></li>
         <li><a href="#materials">Materials</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#reviews">Reviews</a></li>
       </ul>
     </div>
     <div>
@@ -942,14 +1089,16 @@ const productData = {
     variants:[
       {size:"Fire Blanket", img:"images/Fire-Blanket.jpg", title:"Fire Blanket", desc:"Fire-retardant fabric sheet for smothering small pan and kitchen fires, or wrapping around a person."},
       {size:"Fire Hose", img:"images/Fire-Hose.jpg", title:"Fire Hose", desc:"Flexible tube for delivering water or foam from hydrants and hose reels to the fire source."},
-      {size:"Brackets", img:"images/Brackets.jpg", title:"Extinguisher Brackets", desc:"Wall-mount brackets for correct extinguisher placement and access."},
-      {size:"Stands", img:"images/Stands.jpg", title:"Extinguisher Stands", desc:"Free-standing floor stands for correct extinguisher placement and access."},
+      {size:"Brackets & Stands", img:"images/Brackets-Stands.jpg", title:"Extinguisher Brackets & Stands", desc:"Wall-mount brackets and free-standing floor stands for correct extinguisher placement and access."},
+      {size:"Safety Signage", img:"images/Safety-Signage.jpg", title:"Safety Signage", desc:"Exit, fire alarm and extinguisher-location signs required for compliance and clear evacuation routes."},
       {size:"Extinguisher Cabinets", img:"images/Extinguisher-Cabinets.jpg", title:"Extinguisher Cabinets", desc:"Indoor and weatherproof outdoor cabinets that protect extinguishers while keeping them accessible."},
+      {size:"Pressure Gauges", img:"images/Pressure-Gauges.jpg", title:"Pressure Gauges", desc:"Replacement gauges for extinguishers, confirming the unit is correctly pressurised and ready to use."},
       {size:"Seals & Safety Pins", img:"images/Seals-Pins.jpg", title:"Seals & Safety Pins", desc:"Tamper-evident seals and safety pins replaced after every inspection, refill or use."},
+      {size:"Refill Agents", img:"images/Refill-Agents.jpg", title:"Refill Agents", desc:"DCP powder, CO₂, AFFF foam concentrate and wet chemical agent supplied for refilling any extinguisher type."},
     ], variantLabel:"Material Type" },
 };
 const tabOrder = ["DCP","CO2","AFFF","Wet","Water","Alarm","Suppression","Hydrant","Materials"];
-let activeTab = "DCP";
+let activeTab = "Water";
 let activeVariant = productData[activeTab].variants[0].size;
 
 function renderTabs(){
@@ -1173,6 +1322,27 @@ if(projectsGrid && scrollPrevBtn && scrollNextBtn){
   projectsGrid.addEventListener("scroll", updateNavVisibility);
   window.addEventListener("resize", updateNavVisibility);
   updateNavVisibility();
+}
+
+/* ===== Reviews carousel scroll buttons ===== */
+const reviewsGrid = document.getElementById("reviewsGrid");
+const reviewsScrollPrevBtn = document.getElementById("reviewsScrollPrev");
+const reviewsScrollNextBtn = document.getElementById("reviewsScrollNext");
+if(reviewsGrid && reviewsScrollPrevBtn && reviewsScrollNextBtn){
+  const reviewsScrollStep = () => (reviewsGrid.querySelector(".review-card")?.offsetWidth || 300) + 16;
+  reviewsScrollPrevBtn.addEventListener("click", () => reviewsGrid.scrollBy({ left: -reviewsScrollStep(), behavior: "smooth" }));
+  reviewsScrollNextBtn.addEventListener("click", () => reviewsGrid.scrollBy({ left: reviewsScrollStep(), behavior: "smooth" }));
+
+  const updateReviewsNavVisibility = () => {
+    const maxScroll = reviewsGrid.scrollWidth - reviewsGrid.clientWidth - 4;
+    reviewsScrollPrevBtn.style.opacity = reviewsGrid.scrollLeft <= 4 ? "0" : "1";
+    reviewsScrollPrevBtn.style.pointerEvents = reviewsGrid.scrollLeft <= 4 ? "none" : "auto";
+    reviewsScrollNextBtn.style.opacity = reviewsGrid.scrollLeft >= maxScroll ? "0" : "1";
+    reviewsScrollNextBtn.style.pointerEvents = reviewsGrid.scrollLeft >= maxScroll ? "none" : "auto";
+  };
+  reviewsGrid.addEventListener("scroll", updateReviewsNavVisibility);
+  window.addEventListener("resize", updateReviewsNavVisibility);
+  updateReviewsNavVisibility();
 }
 
 /* ========================================================================
