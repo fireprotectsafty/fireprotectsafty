@@ -1,97 +1,30 @@
-FireProtectSafety (fireprotectsafty.pk)
+# Fire Protect Safety - Official Website
 
-Welcome to the official repository for FireProtectSafety, a premier provider of comprehensive fire safety solutions, equipment, and professional inspection services based in Pakistan.
+Official web application for **Fire Protect Safety** (http://fireprotectsafty.pk/), a leading provider of fire safety equipment, fire suppression systems, and safety compliance services in Pakistan.
 
-🌐 Website Live URL: http://fireprotectsafty.pk/
+---
 
-📋 About The Project
+## 📌 Project Overview
 
-FireProtectSafety is dedicated to safeguarding residential, commercial, and industrial premises against fire hazards. Our web platform serves as a catalog and service portal for client inquiries, product listings, installation requests, and routine maintenance scheduling.
+This repository contains the source code for the official Fire Protect Safety digital platform. The platform is designed to present product catalogs, request quotes, showcase services, and provide clients with information regarding fire protection equipment and compliance standards.
 
-Key Offerings
+### Features
+- **Product Catalog:** Fire extinguishers, alarm systems, sprinklers, and safety gear.
+- **Service Request Form:** Fast quote requests for installation, maintenance, and safety audits.
+- **Responsive UI:** Fully optimized for mobile, tablet, and desktop devices.
+- **Contact & Location:** Quick communication channels and business details.
 
-Fire Extinguishers: Supply, refill, and maintenance of CO2, Dry Chemical Powder (DCP), Water, and Foam fire extinguishers.
+---
 
-Safety Gear & Equipment: Personal Protective Equipment (PPE), safety helmets, heat-resistant suits, gloves, and boots.
+## 🛠️ Tech Stack
 
-Fire Detection Systems: Smoke detectors, heat sensors, fire alarm panels, and emergency notification systems.
+- **Frontend:** HTML5, CSS3 / Tailwind CSS, JavaScript (React / Next.js)
+- **Deployment:** Vercel / Custom Hosting
 
-Suppression & Protection: Hose reels, fire hydrants, sprinkler systems, and gas suppression units.
+---
 
-Professional Services: Professional site inspection, system installation, regular maintenance, and compliance audits.
+## 🔒 License & Copyright
 
-✨ Features
+© 2026 **Fire Protect Safety**. All Rights Reserved.
 
-🛒 Product Catalog: Clear categories for all fire safety items and protective equipment.
-
-🛠️ Service Booking: Integrated forms for scheduling inspections and installations.
-
-📱 Fully Responsive: Optimized for seamlessly viewing on desktop, tablet, and mobile browsers.
-
-📞 Direct Contact Integration: Fast access to sales, emergency contact lines, and location details.
-
-🛠️ Tech Stack
-
-Frontend: HTML5, CSS3, JavaScript
-
-Styling/UI: Modern CSS layout (Flexbox/Grid) / Responsive framework
-
-Deployment & Hosting: Web Server (Apache/Nginx) / GitHub Pages or Custom Hosting
-
-🚀 Getting Started
-
-Follow these steps to run the project locally on your system.
-
-Prerequisites
-
-You only need a modern web browser and standard Git tools installed:
-
-Git
-
-Web Browser (Chrome, Edge, Firefox, Safari)
-
-Local Setup
-
-Clone the repository:
-
-git clone https://github.com/fireprotectsafty/fireprotectsafty.git
-
-
-Navigate to the project directory:
-
-cd fireprotectsafty
-
-
-Open the project:
-
-Open index.html directly in your web browser.
-
-Or use an extension like Live Server in VS Code for local development with auto-reload.
-
-🤝 Contributing
-
-Contributions are always welcome! If you find any issues or have suggestions for improvement:
-
-Fork the Repository
-
-Create your Feature Branch (git checkout -b feature/NewFeature)
-
-Commit your Changes (git commit -m 'Add NewFeature')
-
-Push to the Branch (git checkout -b feature/NewFeature)
-
-Open a Pull Request
-
-📄 License
-
-Distributed under the MIT License. See LICENSE for more details.
-
-📞 Contact & Support
-
-Website: http://fireprotectsafty.pk/
-
-Repository: https://github.com/fireprotectsafty/fireprotectsafty
-
-Contact: +92 345 2072882
-
-Email: fireprotectsafty@gmail.com
+This repository and its source code are **proprietary and confidential**. Unauthorized copying, distribution, or reproduction of any part of this repository is strictly prohibited.
